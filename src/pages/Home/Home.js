@@ -4,9 +4,9 @@ import './styles.scss'
 
 const Home = (props) => {
   return (
-    <section className='home'>
-        <Directory/>
-    </section>);
+    <section className="homepage">
+    <Directory />
+  </section>);
 };
 
 export default Home;
