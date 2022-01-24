@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import webreact from "./../../assets/webreact.png";
 import mobilereact from "./../../assets/mobilereact.png";
 import './styles.scss'
@@ -10,12 +12,12 @@ const Directory = (props) => {
         <div 
             className="item" 
             style={{ backgroundImage: `url(${webreact})` }}>
-          <a>React Projects</a>
+          <Link to="/search/reactdesktop">React Desktop</Link>
         </div>
         <div 
         className="item"
-          style={{ backgroundImage: `url(${mobilereact})` }}>
-          <a>Mobile Projects</a>
+          style={{ backgroundImage: `url(${mobilereact})`}}>
+          <Link to="/search/reactmobile">Mobile Projects</Link>
         </div>
       </div>
     </div>
